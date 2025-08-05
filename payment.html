@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Tournament - Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="payment-page">
+    <div class="container">
+        <header>
+            <h1>Liga Penalti KJ City</h1>
+            <nav class="main-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="venues.html">Venues</a>
+                <a href="register.html">Team Registration</a>
+            </nav>
+        </header>
+
+        <main class="content-section">
+            <h2>Payment & Confirmation 💳</h2>
+
+            <div id="payment-summary" class="payment-summary">
+                <h3>Selected Venue & Slot for Payment:</h3>
+                <div id="venue-slot-payment-details">
+                    <p>No venue or slot selected. Please choose a venue and slot from the <a href="venues.html">Venues section</a>.</p>
+                </div>
+                <div class="total-amount">
+                    <span>Registration Fee:</span>
+                    <span id="registration-fee">RM 200.00</span>
+                </div>
+
+                <div class="payment-methods">
+                    <h3>Select Payment Method:</h3>
+                    <div class="payment-options">
+                        <button class="payment-btn active" data-method="online-banking">Online Banking</button>
+                        <button class="payment-btn" data-method="e-wallet">E-Wallet</button>
+                        <button class="payment-btn" data-method="cash">Cash (On-site)</button>
+                    </div>
+                </div>
+
+                <button id="confirm-payment-btn" class="button primary-button confirm-payment-button" disabled>Confirm Payment</button>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Liga Penalti KJ City. All rights reserved.</p>
+                <p>Contact: kjcity@gmail.com | +6012 345 6789</p>
+            </div>
+        </footer>
+    </div>
+    
+    <div id="message-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

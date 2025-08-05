@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Tournament - Register Team</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="register-page">
+    <div class="container">
+        <header>
+            <h1>Liga Penalti KJ City</h1>
+            <nav class="main-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="venues.html">Venues</a>
+                <a href="register.html">Team Registration</a>
+            </nav>
+        </header>
+
+        <main class="content-section">
+            <h2>Team Registration 📝</h2>
+            <form id="registration-form" class="registration-form">
+                <div class="form-group">
+                    <label for="team-name">Team Name:</label>
+                    <input type="text" id="team-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="venue-select">Preferred Venue:</label>
+                    <select id="venue-select" required disabled>
+                        <option value="">Select a Venue</option>
+                        <option value="Venue A">Padang A UKM</option>
+                        <option value="Venue B">Padang B UKM</option>
+                        <option value="Venue C">Padang C UKM</option>
+                    </select>
+                    <p class="text-sm text-gray-600 mt-1">Venue is pre-selected based on your payment.</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="slot-display">Selected Slot:</label>
+                    <input type="text" id="slot-display" disabled placeholder="Slot will appear here after payment">
+                    <p class="text-sm text-gray-600 mt-1">Slot is pre-selected based on your payment.</p>
+                </div>
+
+                <h3>Player Details (Exactly 10 Players)</h3>
+                <div id="player-inputs">
+                    <!-- 10 Player input fields will be added here by JavaScript -->
+                </div>
+
+                <button type="submit" class="button primary-button register-button">Register Team</button>
+            </form>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Liga Penalti KJ City. All rights reserved.</p>
+                <p>Contact: kjcity@gmail.com | +6012 345 6789</p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="message-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

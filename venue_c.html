@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Tournament - Venue C</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="venue-c-page">
+    <div class="container">
+        <header>
+            <h1>Liga Penalti KJ City</h1>
+            <nav class="main-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="venues.html">Venues</a>
+                <a href="register.html">Team Registration</a>
+            </nav>
+        </header>
+
+        <main class="content-section">
+            <h2>Padang C UKM 🏫</h2>
+            <p class="text-center text-lg mb-8">Select an available team slot for your registration.</p>
+
+            <h3>Available Team Slots:</h3>
+            <div id="venue-slots-container" class="venue-slots-grid">
+                <!-- Group A -->
+                <div class="group-section">
+                    <h4>Group A</h4>
+                    <div class="slots-row">
+                        <div class="slot-item" data-group="A" data-slot="A1">A1</div>
+                        <div class="slot-item" data-group="A" data-slot="A2">A2</div>
+                        <div class="slot-item" data-group="A" data-slot="A3">A3</div>
+                        <div class="slot-item" data-group="A" data-slot="A4">A4</div>
+                    </div>
+                </div>
+                <!-- Group B -->
+                <div class="group-section">
+                    <h4>Group B</h4>
+                    <div class="slots-row">
+                        <div class="slot-item" data-group="B" data-slot="B1">B1</div>
+                        <div class="slot-item" data-group="B" data-slot="B2">B2</div>
+                        <div class="slot-item" data-group="B" data-slot="B3">B3</div>
+                        <div class="slot-item" data-group="B" data-slot="B4">B4</div>
+                    </div>
+                </div>
+                <!-- Group C -->
+                <div class="group-section">
+                    <h4>Group C</h4>
+                    <div class="slots-row">
+                        <div class="slot-item" data-group="C" data-slot="C1">C1</div>
+                        <div class="slot-item" data-group="C" data-slot="C2">C2</div>
+                        <div class="slot-item" data-group="C" data-slot="C3">C3</div>
+                        <div class="slot-item" data-group="C" data-slot="C4">C4</div>
+                    </div>
+                </div>
+                <!-- Group D -->
+                <div class="group-section">
+                    <h4>Group D</h4>
+                    <div class="slots-row">
+                        <div class="slot-item" data-group="D" data-slot="D1">D1</div>
+                        <div class="slot-item" data-group="D" data-slot="D2">D2</div>
+                        <div class="slot-item" data-group="D" data-slot="D3">D3</div>
+                        <div class="slot-item" data-group="D" data-slot="D4">D4</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <button id="proceed-to-payment-btn" class="button primary-button" data-venue="Venue C" disabled>Proceed to Payment</button>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Liga Penalti KJ City. All rights reserved.</p>
+                <p>Contact: kjcity@gmail.com | +6012 345 6789</p>
+            </div>
+        </footer>
+    </div>
+    
+    <div id="message-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
